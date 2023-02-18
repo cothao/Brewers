@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:#B5B7CF;
+    background-image: url('https://www.visitmilwaukee.org/remote.jpg.ashx?mode=crop&width=1920&height=1080&scale=both&urlb64=aHR0cDovL2Fzc2V0cy5zaW1wbGV2aWV3aW5jLmNvbS9zaW1wbGV2aWV3L2ltYWdlL3VwbG9hZC9jX2ZpdCx3XzE5MjAsaF8xMDgwL2NybS9taWx3YXVrZWUvQW1lcmljYW5GYW1pbHlGaWVsZF8wOUY4MTRBMi01MDU2LUEzNkYtMjNDRTg0NDRGQjE0Rjg0NS0wOWY4MTNhYzUwNTZhMzZfMDlmODE0ZmYtNTA1Ni1hMzZmLTIzMzA2NjE5YWU0NDYyNjAuanBn&hmac=rx6jqKlmfuQ');
 }
 
 html {
@@ -13,19 +13,18 @@ html {
 }
 
 header {
-    border: 1px solid black;
     width: 100%;
     height: auto;
     background-color: #FFC52F;
 }
 
 .sec_container {
-    border: 1px solid black;
-    padding-bottom: 100px;
+    margin-top: 10px;
     width: 70%;
     height: auto;
     height: 700px;
     overflow: scroll;
+    margin-left: 10px;
 }
 
 .sec_container div {
@@ -57,14 +56,13 @@ header {
 }
 
 .left_sec-container {
+    margin-top: 10px;
     width: 30%;
     height: 550px;
-    background-color: white;
     text-align: center;
     opacity: 0;
     transition:all 1s;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px grey;
     border: 1px solid black;
 }
 
@@ -91,7 +89,7 @@ header {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-    background-color: white;
+    background-color:#eaebf5;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -106,7 +104,6 @@ header {
 
 .playerImg {
     border: 1px solid black;
-    border-radius: 10px;
 }
 
 .playName{
@@ -127,3 +124,12 @@ header {
     justify-content: center;
 }
 
+.div_nav {
+    font-family: 'Rubik', sans-serif;
+    padding-left: 10px;
+    background-color: #12284b;
+    color:#FFC52F;
+    font-weight: 300;
+    width: 100%;
+    cursor: default;
+}
