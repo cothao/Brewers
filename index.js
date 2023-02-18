@@ -47,6 +47,8 @@ class App {
                 id = e.target.parentElement.dataset.id //makes sure that if an image is clicked on the div that the person still changes
             }
             rightSec.classList.remove('hidden')
+            rightSec.style.opacity = 1
+            rightSec.style.marginLeft = '100px'
         })
         leftSec.addEventListener('click', this._showPlayerInfo.bind(this))
     }
@@ -64,7 +66,7 @@ class App {
         id1 = this.data2.find(data => {
             return data.id === Number(id)
         })
-playerName.innerHTML = `<strong>Name:</strong> ${id1.firstName} ${id1.lastName}`
+playerName.innerHTML = `<strong>Name:</strong><div>${id1.firstName} ${id1.lastName}</div>`
 city.innerHTML = `<strong>Birth City:</strong> ${id1.birthCity}`
 country.innerHTML = `<strong>Birth Country:</strong> ${id1.birthCountry}`
 state.innerHTML = `<strong>Birth State Province:</strong> ${!id1.birthStateProvince ? 'N/A' : id1.birthStateProvince}`

@@ -29,21 +29,18 @@ header {
 }
 
 .sec_container div {
-    border: 1px solid black;
     padding-bottom: 20px;
     display: flex;
     flex-wrap: nowrap;
     font-family: 'Rubik', sans-serif;
-    border-radius: 10px;
     background-color: white;
 }
 
 .sec_container div:hover {
-    border: 3px solid #12284b;
     padding-bottom: 20px;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #B5B7CF;
+    background-color: #eaebf5;
 }
 
 .playerImg {
@@ -61,11 +58,19 @@ header {
 
 .left_sec-container {
     width: 30%;
+    height: 550px;
     background-color: white;
     text-align: center;
+    opacity: 0;
+    transition:all 1s;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid black;
 }
 
 .left_sec-container img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
     border: 5px solid #12284b;
     width: 100%;
     background-color: white;
@@ -75,16 +80,18 @@ header {
 }
 
 .left_sec-container h2{
-    border: 1px solid black;
+    border: 0.5px solid black;
     background-color: #B5B7CF;
     width: 100%;
 }
 
 .info_div {
-    border: 1px solid black;
-    text-align: left;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 10px;
-    background-color: #B5B7CF;
+    background-color: white;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -111,9 +118,9 @@ header {
     flex: 1
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 .players {
     display: flex;
