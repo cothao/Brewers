@@ -134,7 +134,7 @@ header {
     cursor: default;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1370px) {
     .sec_container{
         width: 60%;
 }
@@ -143,3 +143,8 @@ header {
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1950px) {
+    .left_sec-container {
+        width: 20%;
+    }
+}
